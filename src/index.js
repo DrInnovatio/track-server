@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+// comment to text git commit
+
 const mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0.vk6mi.mongodb.net/<dbname>?retryWrites=true&w=majority';
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,

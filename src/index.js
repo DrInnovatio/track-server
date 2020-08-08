@@ -1,9 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const authRoutes = require('./routers/authRoutes');
 
 const app = express();
 
-// comment to text git commit
+app.use(authRoutes);
 
 const mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0.vk6mi.mongodb.net/<dbname>?retryWrites=true&w=majority';
 mongoose.connect(mongoUri, {

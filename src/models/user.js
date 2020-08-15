@@ -33,7 +33,8 @@ userSchema.pre('save', function (next) {
   });
 });
 
-userSchema.method.comparePassword = function (candidatePassword) {
+userSchema.methods.comparePassword = function comparePassword(candidatePassword) {
+
   const user = this;
 
   return new Promise((resolve, reject) => {

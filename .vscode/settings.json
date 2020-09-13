@@ -1,0 +1,5 @@
+{
+  "prettier.useTabs": true,
+  "prettier.withNodeModules": true,
+  "prettier.prettierPath": "/Users/bmac/node_modules/prettier"
+}

@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true
+              required: true
   }
 });
 userSchema.pre('save', function (next) {
@@ -53,4 +53,3 @@ userSchema.methods.comparePassword = function comparePassword(candidatePassword)
 }
 
 mongoose.model('User', userSchema);
-
